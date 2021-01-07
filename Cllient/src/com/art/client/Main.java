@@ -15,7 +15,7 @@ public class Main {
         ClientMethods clientMethods = new ClientMethods();
 
         try {
-            clientMethods.startConnection("127.0.0.1", 9870);
+            clientMethods.startConnection("127.0.0.1", 9870, targetArray);
             clientMethods.sendMessage("hello server");
         } catch (IOException | InterruptedException e) {
             e.printStackTrace();

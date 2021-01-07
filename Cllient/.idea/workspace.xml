@@ -2,7 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8dfa7494-433e-496f-9b11-8a9dea425fad" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Cllient/com/art/client/ClientMethods.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cllient/com/art/client/ClientMethods.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Cllient/com/art/client/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cllient/com/art/client/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/art/client/ClientMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/art/client/ClientMethods.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/art/client/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/art/client/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/out/production/Server/com/art/server/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/out/production/Server/com/art/server/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/src/com/art/server/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/src/com/art/server/Main.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
