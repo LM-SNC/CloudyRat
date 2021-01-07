@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="864c6de2-1351-4466-ac75-081637be53ad" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Cllient/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Cllient/src/com/art/client/ClientMethods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Cllient/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Cllient/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Cllient/Cllient.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Cllient/Cllient.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Cllient/src/com/art/client/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Cllient/src/com/art/client/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/art/server/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/art/server/Main.java" afterDir="false" />
-    </list>
+    <list default="true" id="864c6de2-1351-4466-ac75-081637be53ad" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,6 +56,14 @@
       <option name="presentableId" value="Default" />
       <updated>1609428889536</updated>
     </task>
+    <task id="LOCAL-00001" summary="Server(only input)">
+      <created>1610039318682</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1610039318682</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -79,5 +78,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Server(only input)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Server(only input)" />
   </component>
 </project>

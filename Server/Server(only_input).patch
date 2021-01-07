@@ -1,0 +1,75 @@
+Index: Cllient/.idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- Cllient/.idea/workspace.xml	(date 1610039318000)
++++ Cllient/.idea/workspace.xml	(date 1610039323468)
+@@ -1,16 +1,7 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="ChangeListManager">
+-    <list default="true" id="8dfa7494-433e-496f-9b11-8a9dea425fad" name="Default Changelist" comment="">
+-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/com/art/client/ClientMethods.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Cllient.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Cllient.iml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/com/art/client/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/art/client/Main.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../Server/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../Server/src/com/art/server/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/src/com/art/server/Main.java" afterDir="false" />
+-    </list>
++    <list default="true" id="8dfa7494-433e-496f-9b11-8a9dea425fad" name="Default Changelist" comment="" />
+     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+Index: Server/.idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- Server/.idea/workspace.xml	(date 1610039318000)
++++ Server/.idea/workspace.xml	(date 1610039323375)
+@@ -1,16 +1,7 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="ChangeListManager">
+-    <list default="true" id="864c6de2-1351-4466-ac75-081637be53ad" name="Default Changelist" comment="">
+-      <change afterPath="$PROJECT_DIR$/../Cllient/.idea/vcs.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/../Cllient/src/com/art/client/ClientMethods.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../Cllient/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Cllient/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../Cllient/Cllient.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Cllient/Cllient.iml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../Cllient/src/com/art/client/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Cllient/src/com/art/client/Main.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/com/art/server/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/art/server/Main.java" afterDir="false" />
+-    </list>
++    <list default="true" id="864c6de2-1351-4466-ac75-081637be53ad" name="Default Changelist" comment="" />
+     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -65,6 +56,14 @@
+       <option name="presentableId" value="Default" />
+       <updated>1609428889536</updated>
+     </task>
++    <task id="LOCAL-00001" summary="Server(only input)">
++      <created>1610039318682</created>
++      <option name="number" value="00001" />
++      <option name="presentableId" value="LOCAL-00001" />
++      <option name="project" value="LOCAL" />
++      <updated>1610039318682</updated>
++    </task>
++    <option name="localTasksCounter" value="2" />
+     <servers />
+   </component>
+   <component name="Vcs.Log.Tabs.Properties">
+@@ -80,4 +79,8 @@
+       </map>
+     </option>
+   </component>
++  <component name="VcsManagerConfiguration">
++    <MESSAGE value="Server(only input)" />
++    <option name="LAST_COMMIT_MESSAGE" value="Server(only input)" />
++  </component>
+ </project>
+\ No newline at end of file
