@@ -10,7 +10,7 @@ public class Main {
         targetArray.add("secondItem");
         targetArray.add("thirdItem");
         targetArray.add("fifthItem");
-
+//
 
         ClientMethods clientMethods = new ClientMethods();
 
