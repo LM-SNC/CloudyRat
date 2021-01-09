@@ -2,6 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8dfa7494-433e-496f-9b11-8a9dea425fad" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/art/client/ClientListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThreadsLearning/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThreadsLearning/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThreadsLearning/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThreadsLearning/src/com/art/threads/ThreadClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThreadsLearning/src/com/art/threads/ThreadInterfaceRunnle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Cllient/com/art/client/ClientMethods.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cllient/com/art/client/ClientMethods.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Cllient/com/art/client/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cllient/com/art/client/Main.class" afterDir="false" />

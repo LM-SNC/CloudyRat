@@ -25,22 +25,38 @@ public class Main {
 //            String line = reader.readLine();    // reads a line of text|| Читаем строку
 //            System.out.println("Getting data: " + line); //Выводим на экран данные полученные от клиента
 
-            ObjectInputStream objectInputStream = new ObjectInputStream(input);
-
             // read the list of messages from the socket
-            ArrayList<String> targetList = new ArrayList<String>((ArrayList<String>) objectInputStream.readObject());
-            System.out.println("Received [" + targetList.size() + "] messages from: " + socket);
-            // print out the text of every message
-            System.out.println("All messages:");
-            for(String arrayItem : targetList) {
-                System.out.println(arrayItem);
+//            ArrayList<String> targetList = new ArrayList<String>((ArrayList<String>) objectInputStream.readObject());
+//            System.out.println("Received [" + targetList.size() + "] messages from: " + socket);
+//            // print out the text of every message
+//            System.out.println("All messages:");
+//            for(String arrayItem : targetList) {
+//                System.out.println(arrayItem);
+//            }
+
+//            ObjectInputStream objectInputStream = new ObjectInputStream(input); //TODO Читаем данные как ...
+//            String gettingString = (String) objectInputStream.readObject();
+//            System.out.println(gettingString);
+
+//TODO Отправка строки
+//            OutputStream outputStream = socket.getOutputStream();
+//            ObjectOutputStream objectOutputStream = new ObjectOutputStream(outputStream);
+//            System.out.println("Sending messages(String) to the ServerSocket");
+//            String message = "msg13";
+//            objectOutputStream.writeObject(message);
+
+
+            OutputStream outputStream = socket.getOutputStream();
+            for(int i = 0; i < 13; i ++) {
+                ObjectOutputStream objectOutputStream = new ObjectOutputStream(outputStream);
+                System.out.println("Sending messages(String) to the ServerSocket");
+                String message = "msg " + i;
+                objectOutputStream.writeObject(message);
             }
 
 
 
-
-
-        } catch (IOException | ClassNotFoundException e) {
+        } catch (IOException e) {
             System.out.println("Main:main(): " + e);
         }
     }
