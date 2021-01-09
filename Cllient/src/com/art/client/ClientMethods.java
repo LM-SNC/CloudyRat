@@ -19,15 +19,13 @@ public class ClientMethods {
             Thread listenerThread = new Thread(new ClientListener(clientSocket, ip, port));
             listenerThread.start();
             connection = true;
-
+            System.out.println("Умпешно подключились к серверу!");
         } catch (ConnectException e) {
             System.out.println("Произошла ошибка при установки соединения: " + e);
             System.out.println("Пробуем ещё раз через " + connectionInterval + " секунд");
-
             Thread.sleep(connectionInterval * 1000);
             startConnection(ip, port);
         }
-        System.out.println("Отправляем null");
     }
 
     public void sendMessage(String msg) throws IOException {
@@ -37,6 +35,7 @@ public class ClientMethods {
             objectOutputStream.writeObject(msg);
         } else {
             System.out.println("Ничего не отправили");
+            System.out.println("Connection status: " + connection);
         }
     }
 

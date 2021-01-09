@@ -26,7 +26,7 @@ public class ClientListener implements Runnable {
             ObjectInputStream objectInputStream;
             while (true) {
                     objectInputStream = new ObjectInputStream(input);
-                    System.out.println((String) objectInputStream.readObject());
+                    System.out.println(objectInputStream.readObject());
             }
         } catch (SocketException ex){
             System.out.println("ClientListener:run()--Соединение потеряно, пытаемся восстановить " + ex);

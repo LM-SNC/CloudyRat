@@ -2,19 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="864c6de2-1351-4466-ac75-081637be53ad" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Cllient/src/com/art/client/ClientListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ThreadsLearning/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ThreadsLearning/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ThreadsLearning/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ThreadsLearning/out/production/ThreadsLearning/META-INF/ThreadsLearning.kotlin_module" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ThreadsLearning/out/production/ThreadsLearning/com/art/threads/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ThreadsLearning/out/production/ThreadsLearning/com/art/threads/ThreadClass.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ThreadsLearning/out/production/ThreadsLearning/com/art/threads/ThreadInterfaceRunnle.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ThreadsLearning/src/com/art/threads/ThreadClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ThreadsLearning/src/com/art/threads/ThreadInterfaceRunnle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/art/server/ServerListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/art/server/ServerMethods.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Cllient/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Cllient/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Cllient/out/production/Cllient/com/art/client/ClientMethods.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Cllient/out/production/Cllient/com/art/client/ClientMethods.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Cllient/out/production/Cllient/com/art/client/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Cllient/out/production/Cllient/com/art/client/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cllient/src/com/art/client/ClientListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Cllient/src/com/art/client/ClientListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Cllient/src/com/art/client/ClientMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Cllient/src/com/art/client/ClientMethods.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Cllient/src/com/art/client/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Cllient/src/com/art/client/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -26,6 +19,13 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />

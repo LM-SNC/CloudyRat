@@ -8,6 +8,7 @@ public class Main {
 
         try {
            clientMethods.startConnection("127.0.0.1", 9870);
+            clientMethods.sendMessage("hello!");
         } catch (IOException | InterruptedException e) {
             e.printStackTrace();
         }
