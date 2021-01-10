@@ -8,8 +8,14 @@ import java.util.ArrayList;
 public class Main {
 
     public static void main(String[] args) {
-        int clientId = 0;
         Thread serverListener;
+        ServerMethods serverMethods = new ServerMethods();
+        int clientId = 0;
+        String testString = "Info";
+        ArrayList<String> testList = new <String>ArrayList<String>();
+        testList.add("value1");
+        Object submittedObject = testList;
+
         try {
             ServerSocket serverSocket = new ServerSocket(9870);//Создаем серверСокет, привязываем к нему порт
             while (true) {
@@ -17,6 +23,9 @@ public class Main {
                 serverListener = new Thread(new ServerListener(socket, clientId));
                 serverListener.start();
                 clientId++;
+                serverMethods.sendMessage(submittedObject, socket);
+                submittedObject = testString;
+                serverMethods.sendMessage(testString, socket);
                 /*
                  *   Обратите внимание, что метод accept () блокирует текущий поток до тех пор,
                  *   пока не будет установлено соединение. И соединение представлено возвращенным объектом Socket .

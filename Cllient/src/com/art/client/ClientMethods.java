@@ -5,6 +5,7 @@ import java.io.ObjectOutputStream;
 import java.io.OutputStream;
 import java.net.ConnectException;
 import java.net.Socket;
+import java.util.ArrayList;
 
 public class ClientMethods {
     private Socket clientSocket;
@@ -16,7 +17,7 @@ public class ClientMethods {
         try {
             clientSocket = new Socket(ip, port);
             outputStream = clientSocket.getOutputStream();
-            Thread listenerThread = new Thread(new ClientListener(clientSocket, ip, port));
+            Thread listenerThread = new Thread(new ClientListener(clientSocket, ip, port, this));
             listenerThread.start();
             connection = true;
             System.out.println("Умпешно подключились к серверу!");
@@ -36,6 +37,22 @@ public class ClientMethods {
         } else {
             System.out.println("Ничего не отправили");
             System.out.println("Connection status: " + connection);
+        }
+    }
+
+    public void readData(Object receivedObject) {
+        if (receivedObject instanceof String) {
+            System.out.println("Getting data - String");
+        } else if (receivedObject instanceof Integer) {
+            System.out.println("Getting data - Integer");
+        } else if (receivedObject instanceof Character) {
+            System.out.println("Getting data - Character");
+        } else if (receivedObject instanceof Float) {
+            System.out.println("Getting data - Float");
+        } else if (receivedObject instanceof ArrayList) {
+            System.out.println("Getting data - ArrayList");
+        } else {
+            System.out.println("ClientMethods:readData()--Unknown data format");
         }
     }
 

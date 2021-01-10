@@ -2,17 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="864c6de2-1351-4466-ac75-081637be53ad" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/art/server/ServerListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/art/server/ServerMethods.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Cllient/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Cllient/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Cllient/out/production/Cllient/com/art/client/ClientMethods.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Cllient/out/production/Cllient/com/art/client/ClientMethods.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Cllient/out/production/Cllient/com/art/client/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Cllient/out/production/Cllient/com/art/client/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Cllient/src/com/art/client/ClientListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Cllient/src/com/art/client/ClientListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Cllient/src/com/art/client/ClientMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Cllient/src/com/art/client/ClientMethods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Cllient/src/com/art/client/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Cllient/src/com/art/client/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Server/com/art/server/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Server/com/art/server/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/art/server/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/art/server/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/art/server/ServerMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/art/server/ServerMethods.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

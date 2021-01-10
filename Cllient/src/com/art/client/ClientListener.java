@@ -12,9 +12,9 @@ public class ClientListener implements Runnable {
     String ip;
     int port;
 
-    public ClientListener(Socket clientSocket, String ip, int port) {
+    public ClientListener(Socket clientSocket, String ip, int port, ClientMethods clientMethods) {
         this.clientSocket = clientSocket;
-        clientMethods = new ClientMethods();
+        this.clientMethods = clientMethods;
         this.ip = ip;
         this.port = port;
     }
@@ -25,10 +25,11 @@ public class ClientListener implements Runnable {
             InputStream input = clientSocket.getInputStream();//inputStream для чтения данных, отправленных от сервера
             ObjectInputStream objectInputStream;
             while (true) {
-                    objectInputStream = new ObjectInputStream(input);
-                    System.out.println(objectInputStream.readObject());
+                objectInputStream = new ObjectInputStream(input);
+                Object receivedObject = objectInputStream.readObject();
+                clientMethods.readData(receivedObject);
             }
-        } catch (SocketException ex){
+        } catch (SocketException ex) {
             System.out.println("ClientListener:run()--Соединение потеряно, пытаемся восстановить " + ex);
             try {
                 clientMethods.startConnection(ip, port);
