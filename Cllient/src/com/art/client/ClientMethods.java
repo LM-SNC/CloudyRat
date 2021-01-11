@@ -8,11 +8,13 @@ import java.net.Socket;
 import java.util.ArrayList;
 
 public class ClientMethods {
+    ClientCommands clientCommands = new ClientCommands();
+
     private Socket clientSocket;
     private OutputStream outputStream;
+
     private boolean connection;
     private int connectionInterval = 5;
-
     public void startConnection(String ip, int port) throws IOException, InterruptedException {
         try {
             clientSocket = new Socket(ip, port);
@@ -40,9 +42,11 @@ public class ClientMethods {
         }
     }
 
-    public void readData(Object receivedObject) {
+    public void readData(Object receivedObject) throws IOException {
         if (receivedObject instanceof String) {
-            System.out.println("Getting data - String");
+            if (((String) receivedObject).equalsIgnoreCase("updateData()")) {
+                clientCommands.updateData(clientSocket);
+            }
         } else if (receivedObject instanceof Integer) {
             System.out.println("Getting data - Integer");
         } else if (receivedObject instanceof Character) {

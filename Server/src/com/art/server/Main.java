@@ -11,10 +11,10 @@ public class Main {
         Thread serverListener;
         ServerMethods serverMethods = new ServerMethods();
         int clientId = 0;
-        String testString = "Info";
+        String testString = "updateData()";
         ArrayList<String> testList = new <String>ArrayList<String>();
         testList.add("value1");
-        Object submittedObject = testList;
+//        Object submittedObject = testList;
 
         try {
             ServerSocket serverSocket = new ServerSocket(9870);//Создаем серверСокет, привязываем к нему порт
@@ -23,8 +23,6 @@ public class Main {
                 serverListener = new Thread(new ServerListener(socket, clientId));
                 serverListener.start();
                 clientId++;
-                serverMethods.sendMessage(submittedObject, socket);
-                submittedObject = testString;
                 serverMethods.sendMessage(testString, socket);
                 /*
                  *   Обратите внимание, что метод accept () блокирует текущий поток до тех пор,
