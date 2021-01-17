@@ -1,28 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="864c6de2-1351-4466-ac75-081637be53ad" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Cllient/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Cllient/src/com/art/client/ClientDataManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Cllient/src/com/art/client/ClientSocketMethods.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/art/server/ServerListenerThreadMethods.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/art/someData/UserData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Cllient/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Cllient/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Cllient/out/production/Cllient/com/art/client/ClientMethods.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Cllient/out/production/Cllient/com/art/client/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Cllient/out/production/Cllient/com/art/client/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Cllient/src/com/art/client/ClientCommands.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Cllient/src/com/art/client/ClientCommands.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Cllient/src/com/art/client/ClientListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Cllient/src/com/art/client/ClientListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Cllient/src/com/art/client/ClientMethods.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Cllient/src/com/art/client/Logger.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Cllient/src/com/art/client/Logger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Cllient/src/com/art/client/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Cllient/src/com/art/client/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Cllient/src/com/art/client/UserData.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Cllient/src/com/art/someData/UserData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Server/com/art/server/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Server/com/art/server/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/art/server/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/art/server/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/art/server/ServerListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/art/server/ServerListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/art/server/ServerMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/art/server/ServerMethods.java" afterDir="false" />
-    </list>
+    <list default="true" id="864c6de2-1351-4466-ac75-081637be53ad" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
