@@ -1,4 +1,4 @@
-package com.art.client;
+package com.art.someData;
 
 import java.io.Serializable;
 
@@ -6,7 +6,6 @@ public class UserData implements Serializable {
     public String publicIP;
     public String userName;
     public String operationSystem;
-    public boolean cam;
 
     @Override
     public String toString() {
@@ -14,7 +13,6 @@ public class UserData implements Serializable {
                 "publicIP='" + publicIP + '\'' +
                 ", userName='" + userName + '\'' +
                 ", operationSystem=" + operationSystem +
-                ", cam=" + cam +
                 '}';
     }
 }

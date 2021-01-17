@@ -1,17 +1,23 @@
 package com.art.client;
 
+
 import java.io.IOException;
 import java.io.ObjectOutputStream;
 import java.io.OutputStream;
 import java.net.ConnectException;
 import java.net.Socket;
 import java.util.ArrayList;
+/*
+    Создавать objectOutputStream один раз для каждого клиента,
+    а не для каждой новой отправки
 
-public class ClientMethods {
-    ClientCommands clientCommands = new ClientCommands();
+ */
+public class ClientSocketMethods {
+    private ClientCommands clientCommands = new ClientCommands(this);
 
     private Socket clientSocket;
     private OutputStream outputStream;
+    private ObjectOutputStream objectOutputStream;
 
     private boolean connection;
     private int connectionInterval = 5;
@@ -21,8 +27,12 @@ public class ClientMethods {
             outputStream = clientSocket.getOutputStream();
             Thread listenerThread = new Thread(new ClientListener(clientSocket, ip, port, this));
             listenerThread.start();
+            objectOutputStream = new ObjectOutputStream(outputStream);
             connection = true;
-            System.out.println("Умпешно подключились к серверу!");
+            System.out.println("Успешно подключились к серверу!");
+            sendMessage("connected");
+            sendMessage("connected");
+            sendMessage("connected");
         } catch (ConnectException e) {
             System.out.println("Произошла ошибка при установки соединения: " + e);
             System.out.println("Пробуем ещё раз через " + connectionInterval + " секунд");
@@ -31,11 +41,11 @@ public class ClientMethods {
         }
     }
 
-    public void sendMessage(String msg) throws IOException {
+    public void sendMessage(Object submittedObject) throws IOException {
         if (connection) {
-            ObjectOutputStream objectOutputStream = new ObjectOutputStream(outputStream);
-            System.out.println("ClientMethods:sendMessage()--sendingString");
-            objectOutputStream.writeObject(msg);
+            System.out.println("ClientMethods:sendMessage()--sendingObject:" + submittedObject);
+            objectOutputStream.writeObject(submittedObject);
+//            objectOutputStream.flush();
         } else {
             System.out.println("Ничего не отправили");
             System.out.println("Connection status: " + connection);
@@ -46,6 +56,8 @@ public class ClientMethods {
         if (receivedObject instanceof String) {
             if (((String) receivedObject).equalsIgnoreCase("updateData()")) {
                 clientCommands.updateData(clientSocket);
+            }else {
+                System.out.println("ClientSocketMethods:readData()--Getting string: " + receivedObject);
             }
         } else if (receivedObject instanceof Integer) {
             System.out.println("Getting data - Integer");

@@ -8,13 +8,13 @@ import java.net.SocketException;
 
 public class ClientListener implements Runnable {
     Socket clientSocket;
-    ClientMethods clientMethods;
+    ClientSocketMethods clientSocketMethods;
     String ip;
     int port;
 
-    public ClientListener(Socket clientSocket, String ip, int port, ClientMethods clientMethods) {
+    public ClientListener(Socket clientSocket, String ip, int port, ClientSocketMethods clientSocketMethods) {
         this.clientSocket = clientSocket;
-        this.clientMethods = clientMethods;
+        this.clientSocketMethods = clientSocketMethods;
         this.ip = ip;
         this.port = port;
     }
@@ -24,15 +24,15 @@ public class ClientListener implements Runnable {
         try {
             InputStream input = clientSocket.getInputStream();//inputStream для чтения данных, отправленных от сервера
             ObjectInputStream objectInputStream;
+            objectInputStream = new ObjectInputStream(input);
             while (true) {
-                objectInputStream = new ObjectInputStream(input);
                 Object receivedObject = objectInputStream.readObject();
-                clientMethods.readData(receivedObject);
+                clientSocketMethods.readData(receivedObject);
             }
         } catch (SocketException ex) {
             System.out.println("ClientListener:run()--Соединение потеряно, пытаемся восстановить " + ex);
             try {
-                clientMethods.startConnection(ip, port);
+                clientSocketMethods.startConnection(ip, port);
             } catch (IOException | InterruptedException e) {
                 e.printStackTrace();
             }

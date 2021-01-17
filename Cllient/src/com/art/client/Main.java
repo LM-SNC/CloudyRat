@@ -4,11 +4,11 @@ import java.io.IOException;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        ClientMethods clientMethods = new ClientMethods();
+        ClientSocketMethods clientSocketMethods = new ClientSocketMethods();
 
         try {
-            clientMethods.startConnection("127.0.0.1", 9870);
-            clientMethods.sendMessage("hello!");
+            clientSocketMethods.startConnection("127.0.0.1", 9870);
+            clientSocketMethods.sendMessage("hello!");
         } catch (IOException | InterruptedException e) {
             e.printStackTrace();
         }

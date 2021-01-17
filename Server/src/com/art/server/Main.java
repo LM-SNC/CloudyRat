@@ -20,10 +20,14 @@ public class Main {
             ServerSocket serverSocket = new ServerSocket(9870);//Создаем серверСокет, привязываем к нему порт
             while (true) {
                 Socket socket = serverSocket.accept();//Слушаем входящие запросы
-                serverListener = new Thread(new ServerListener(socket, clientId));
+                serverListener = new Thread(new ServerListener(socket, clientId, serverMethods));
                 serverListener.start();
                 clientId++;
-                serverMethods.sendMessage(testString, socket);
+                ServerListenerThreadMethods serverListenerThreadMethods = new ServerListenerThreadMethods(socket.getOutputStream());
+                serverListenerThreadMethods.sendMessage("Hello fom server!", socket);
+                serverListenerThreadMethods.sendMessage("Hello fom server!", socket);
+                serverListenerThreadMethods.sendMessage("updateData()", socket);
+//                serverMethods.sendMessage(testString, socket);
                 /*
                  *   Обратите внимание, что метод accept () блокирует текущий поток до тех пор,
                  *   пока не будет установлено соединение. И соединение представлено возвращенным объектом Socket .

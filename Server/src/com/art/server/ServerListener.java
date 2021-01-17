@@ -9,8 +9,10 @@ import java.net.SocketException;
 public class ServerListener implements Runnable {
     Socket socket;
     int clientId;
+    ServerMethods serverMethods;
 
-    public ServerListener(Socket socket, int clientId) {
+    public ServerListener(Socket socket, int clientId, ServerMethods serverMethods) {
+        this.serverMethods = serverMethods;
         this.socket = socket;
         this.clientId = clientId;
     }
@@ -18,12 +20,12 @@ public class ServerListener implements Runnable {
     @Override
     public void run() {
         try {
-            InputStream input = socket.getInputStream();//inputStream для чтения данных, отправленных от сервера
-            ObjectInputStream objectInputStream;
-            while (true) {
-                objectInputStream = new ObjectInputStream(input);
-                System.out.println((String) objectInputStream.readObject() + " from client: " + clientId);
+//            InputStream input = socket.getInputStream();//inputStream для чтения данных, отправленных от клиента
+            ObjectInputStream objectInputStream = new ObjectInputStream(socket.getInputStream());
+            while (!socket.isClosed()) {
+                serverMethods.readData(objectInputStream.readObject());
             }
+
         } catch (SocketException ex) {
             System.out.println("ClientListener:run()--Соединение потеряно" + ex);
         } catch (IOException | ClassNotFoundException e) {
