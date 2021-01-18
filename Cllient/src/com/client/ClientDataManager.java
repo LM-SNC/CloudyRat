@@ -1,6 +1,6 @@
-package com.art.client;
+package com.client;
 
-import com.art.someData.UserData;
+import com.someData.UserData;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -25,6 +25,7 @@ public class ClientDataManager {
         userData.publicIP = getIpAddr();
         userData.userName = getOSUserName();
         userData.operationSystem = getOsInformation();
+        System.out.println("ClientDataManager:updateData()--Collected date: " + userData);
         return userData;
     }
 
@@ -36,7 +37,7 @@ public class ClientDataManager {
                 BufferedReader in = new BufferedReader(new InputStreamReader(
                         whatismyip.openStream()));
                 ip = in.readLine(); //you get the IP as a String
-                System.out.println("ClientDataManager():getIpAddr--" + ip + " Адрес был добавлен в userData");
+//                System.out.println("ClientDataManager():getIpAddr--" + ip + " Адрес был добавлен в userData");
                 break;
             } catch (UnknownHostException ex) {
                 System.out.println("Неккоректный адресс сайта");
@@ -49,12 +50,12 @@ public class ClientDataManager {
 
     public String getOSUserName() {
 //        System.out.println("User: " + System.getProperty("user.name"));
-        System.out.println("ClientDataManager():getOSUserName--" + System.getProperty("user.name") + " Имя пользователя windows было добавлено в userData");
+//        System.out.println("ClientDataManager():getOSUserName--" + System.getProperty("user.name") + " Имя пользователя windows было добавлено в userData");
         return System.getProperty("user.name");
     }
 
     public String getOsInformation() {
-        System.out.println("ClientDataManager():getOsInformation--" + System.getProperty("os.name") + " Информация об операционной системе была добавлена в userData");
+//        System.out.println("ClientDataManager():getOsInformation--" + System.getProperty("os.name") + " Информация об операционной системе была добавлена в userData");
         return System.getProperty("os.name");
     }
 }

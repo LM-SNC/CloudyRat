@@ -1,4 +1,4 @@
-package someData;
+package com.someData;
 
 import javafx.beans.property.BooleanProperty;
 import javafx.beans.property.SimpleBooleanProperty;

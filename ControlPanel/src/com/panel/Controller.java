@@ -1,20 +1,19 @@
-package sample;
+package com.panel;
 
 import java.net.URL;
 import java.util.ResourceBundle;
 
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
-import someData.TableData;
+import com.someData.TableData;
 
 public class Controller {
 
     TableManager tableManager;
     public Controller() {
+        tableManager = new TableManager();
     }
 
     @FXML
@@ -45,7 +44,14 @@ public class Controller {
 
     @FXML
     void initialize() {
-        tableManager = new TableManager(mainTable, clientName, publicAddr, userName, onlineStatus);
-        tableManager.updateTableData();
+
+        clientName.setCellValueFactory(param -> param.getValue().clientNameProperty());
+        publicAddr.setCellValueFactory(param -> param.getValue().publicAddrProperty());
+        userName.setCellValueFactory(param -> param.getValue().userNameProperty());
+        onlineStatus.setCellValueFactory(param -> param.getValue().onlineStatusProperty());
+
+        mainTable.setItems(tableManager.getInitialTableData());
+//        tableManager = new TableManager(mainTable, clientName, publicAddr, userName, onlineStatus);
+//        tableManager.updateTableData();
     }
 }

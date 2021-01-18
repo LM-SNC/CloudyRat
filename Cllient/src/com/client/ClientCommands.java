@@ -1,6 +1,6 @@
-package com.art.client;
+package com.client;
 
-import com.art.someData.UserData;
+import com.someData.UserData;
 
 import java.io.IOException;
 import java.net.Socket;

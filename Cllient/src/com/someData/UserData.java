@@ -1,4 +1,4 @@
-package com.art.someData;
+package com.someData;
 
 import java.io.Serializable;
 

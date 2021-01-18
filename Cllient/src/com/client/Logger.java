@@ -1,4 +1,4 @@
-package com.art.client;
+package com.client;
 
 public class Logger {
     private Class logClass;

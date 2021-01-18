@@ -1,4 +1,4 @@
-package com.art.client;
+package com.client;
 
 
 import java.io.IOException;
