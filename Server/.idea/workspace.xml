@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="864c6de2-1351-4466-ac75-081637be53ad" name="Default Changelist" comment="" />
+    <list default="true" id="864c6de2-1351-4466-ac75-081637be53ad" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../ControlPanel/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ControlPanel/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ControlPanel/src/sample/TableManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ControlPanel/src/someData/TableData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cllient/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Cllient/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ControlPanel/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ControlPanel/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ControlPanel/src/com/art/panel/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,7 +30,7 @@
   <component name="ProjectId" id="1mQbicnA6r7FO0PQ8N81wl3LaJP" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Cllient" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ControlPanel" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">

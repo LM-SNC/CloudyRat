@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="900.0" style="-fx-background-color: #5cc9ff;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Text fill="WHITE" layoutX="321.0" layoutY="70.0" opacity="0.76" strokeType="OUTSIDE" strokeWidth="0.0" text="CloudyRAT" textAlignment="CENTER" wrappingWidth="258.9367370605469" AnchorPane.leftAnchor="321.0" AnchorPane.rightAnchor="320.0632629394531">
+         <font>
+            <Font name="Bauhaus 93" size="40.0" />
+         </font>
+         <effect>
+            <DropShadow color="WHITE" height="31.23" radius="14.940000000000001" spread="0.21" width="30.53" />
+         </effect>
+      </Text>
+      <AnchorPane layoutY="151.0" prefHeight="690.0" prefWidth="900.0" style="-fx-background-color: #b8e1f5;" AnchorPane.bottomAnchor="-1.3999999999999773" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="111.0">
+         <children>
+            <TableView fx:id="mainTable" fixedCellSize="0.0" layoutX="51.0" layoutY="59.0" prefHeight="510.0" prefWidth="800.0">
+              <columns>
+                  <TableColumn id="clientName" fx:id="clientName" prefWidth="200.0" text="Client Name" />
+                  <TableColumn id="publicAddr" fx:id="publicAddr" prefWidth="200.0" text="Public IP" />
+                  <TableColumn id="userName" fx:id="userName" prefWidth="200.0" text="OS User" />
+                  <TableColumn id="onlineStatus" fx:id="onlineStatus" prefWidth="200.0" text="Online Status" />
+              </columns>
+            </TableView>
+            <Button fx:id="connectButton" alignment="CENTER" mnemonicParsing="false" opacity="0.69" prefHeight="60.0" prefWidth="358.0" style="-fx-background-color: #b8e1f5;" text="Connect" textAlignment="CENTER" textFill="#b6fffd" AnchorPane.bottomAnchor="14.399999999999977" AnchorPane.leftAnchor="275.0" AnchorPane.rightAnchor="266.6">
+               <font>
+                  <Font name="Bauhaus 93" size="35.0" />
+               </font>
+               <effect>
+                  <InnerShadow color="#189eaf" height="43.65" radius="16.855" width="25.77" />
+               </effect>
+            </Button>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>
