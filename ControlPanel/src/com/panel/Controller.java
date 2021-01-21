@@ -1,8 +1,11 @@
 package com.panel;
 
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.ResourceBundle;
 
+import com.MethodsManager;
+import com.someData.UserData;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
@@ -11,9 +14,9 @@ import com.someData.TableData;
 
 public class Controller {
 
-    TableManager tableManager;
-    public Controller() {
-        tableManager = new TableManager();
+    private MethodsManager methodsManager;
+    public Controller(MethodsManager methodsManager) {
+        this.methodsManager = methodsManager;
     }
 
     @FXML
@@ -44,13 +47,12 @@ public class Controller {
 
     @FXML
     void initialize() {
+        methodsManager.tableMethods.userName = userName;
+        methodsManager.tableMethods.clientName = clientName;
+        methodsManager.tableMethods.mainTable = mainTable;
+        methodsManager.tableMethods.onlineStatus = onlineStatus;
+        methodsManager.tableMethods.publicAddr = publicAddr;
 
-        clientName.setCellValueFactory(param -> param.getValue().clientNameProperty());
-        publicAddr.setCellValueFactory(param -> param.getValue().publicAddrProperty());
-        userName.setCellValueFactory(param -> param.getValue().userNameProperty());
-        onlineStatus.setCellValueFactory(param -> param.getValue().onlineStatusProperty());
-
-        mainTable.setItems(tableManager.getInitialTableData());
 //        tableManager = new TableManager(mainTable, clientName, publicAddr, userName, onlineStatus);
 //        tableManager.updateTableData();
     }

@@ -1,5 +1,6 @@
 package com.server;
 
+import com.MethodsManager;
 import com.someData.UserData;
 
 import java.io.IOException;
@@ -9,6 +10,10 @@ import java.net.Socket;
 import java.util.ArrayList;
 
 public class ServerMethods {
+    MethodsManager methodsManager;
+    public ServerMethods(MethodsManager methodsManager) {
+        this.methodsManager = methodsManager;
+    }
 
     public void readData(Object receivedObject) {
         if (receivedObject instanceof String) {
@@ -23,6 +28,7 @@ public class ServerMethods {
             System.out.println("ServerMethods:readData()--Getting data - ArrayList:");
         } else if (receivedObject instanceof UserData) {
             System.out.println("ServerMethods:readData()--Getting data - UserData: " + receivedObject);
+
 //            System.out.println("ClientMethods:readData()--publicIP: " + ((UserData) receivedObject).publicIP);
 //            System.out.println("ClientMethods:readData()--operationSystem: " + ((UserData) receivedObject).operationSystem);
 //            System.out.println("ClientMethods:readData()--userName: " + ((UserData) receivedObject).userName);
