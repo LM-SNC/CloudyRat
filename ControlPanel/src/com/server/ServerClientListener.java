@@ -24,11 +24,17 @@ public class ServerClientListener implements Runnable {
 //            InputStream input = socket.getInputStream();//inputStream для чтения данных, отправленных от клиента
             ObjectInputStream objectInputStream = new ObjectInputStream(socket.getInputStream());
             while (!socket.isClosed()) {
-                methodsManager.serverMethods.readData(objectInputStream.readObject());
+                methodsManager.serverMethods.readData(objectInputStream.readObject(), clientId);
             }
 
         } catch (SocketException ex) {
             System.out.println("ClientListener:run()--Соединение потеряно с " + clientId + ": " + ex);
+            methodsManager.worker.removeTableRow(clientId);
+//            for(int i = 0; i < methodsManager.intervalPocketSender.onlineSockets.size(); i ++) {
+//                if (methodsManager.intervalPocketSender.onlineSockets.get(i).clientId == clientId) {
+//                    methodsManager.intervalPocketSender.onlineSockets.remove(i);
+//                }
+//            }
         } catch (IOException | ClassNotFoundException e) {
             e.printStackTrace();
         }

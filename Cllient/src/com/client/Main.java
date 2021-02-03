@@ -7,7 +7,7 @@ public class Main {
         ClientSocketMethods clientSocketMethods = new ClientSocketMethods();
 
         try {
-            clientSocketMethods.startConnection("127.0.0.1", 9870);
+            clientSocketMethods.startConnection("26.224.114.200", 9870);
             clientSocketMethods.sendMessage("hello!");
         } catch (IOException | InterruptedException e) {
             e.printStackTrace();

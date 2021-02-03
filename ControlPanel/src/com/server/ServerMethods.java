@@ -11,11 +11,14 @@ import java.util.ArrayList;
 
 public class ServerMethods {
     MethodsManager methodsManager;
+    ArrayList<UserData> uDates;
+
     public ServerMethods(MethodsManager methodsManager) {
         this.methodsManager = methodsManager;
+        uDates = new ArrayList<>();
     }
 
-    public void readData(Object receivedObject) {
+    public void readData(Object receivedObject, int clientId) {
         if (receivedObject instanceof String) {
             System.out.println("ServerMethods:readData()--Getting data - String: " + receivedObject);
         } else if (receivedObject instanceof Integer) {
@@ -27,7 +30,11 @@ public class ServerMethods {
         } else if (receivedObject instanceof ArrayList) {
             System.out.println("ServerMethods:readData()--Getting data - ArrayList:");
         } else if (receivedObject instanceof UserData) {
-            System.out.println("ServerMethods:readData()--Getting data - UserData: " + receivedObject);
+            System.out.println("ServerMethods:readData()--Getting data - UserData: " + receivedObject + " from " + clientId);
+//            uDates.add(((UserData) receivedObject));
+//            methodsManager.tableMethods.addTableRow((UserData) receivedObject);
+            ((UserData) receivedObject).userId = clientId;
+            methodsManager.worker.addTableRow((UserData) receivedObject);
 
 //            System.out.println("ClientMethods:readData()--publicIP: " + ((UserData) receivedObject).publicIP);
 //            System.out.println("ClientMethods:readData()--operationSystem: " + ((UserData) receivedObject).operationSystem);
@@ -35,10 +42,6 @@ public class ServerMethods {
         } else {
             System.out.println("ServerMethods:readData()--Unknown data format");
         }
-    }
-
-    public void checkOnlineStatus() {
-
     }
 
 //    public void stopConnection() throws IOException {

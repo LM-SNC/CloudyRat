@@ -49,8 +49,9 @@ public class ClientDataManager {
     }
 
     public String getOSUserName() {
-//        System.out.println("User: " + System.getProperty("user.name"));
+        System.out.println("User: " + System.getProperty("user.name"));
 //        System.out.println("ClientDataManager():getOSUserName--" + System.getProperty("user.name") + " Имя пользователя windows было добавлено в userData");
+//        return String.valueOf(this.hashCode());
         return System.getProperty("user.name");
     }
 

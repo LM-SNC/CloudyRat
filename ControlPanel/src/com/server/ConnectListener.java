@@ -25,11 +25,13 @@ public class ConnectListener implements Runnable {
                 System.out.println("ConnectListener:run()--Client " + clientId + " was connected");
                 serverClientListener = new Thread(new ServerClientListener(socket, clientId, methodsManager));
                 serverClientListener.start();
+                ClientListenerThreadMethods clientListenerThreadMethods = new ClientListenerThreadMethods(socket.getOutputStream(), clientId);
                 clientId++;
-                ClientListenerThreadMethods clientListenerThreadMethods = new ClientListenerThreadMethods(socket.getOutputStream());
-                clientListenerThreadMethods.sendMessage("Hello fom server!", socket);
-                clientListenerThreadMethods.sendMessage("Hello fom server!", socket);
-                clientListenerThreadMethods.sendMessage("updateData()", socket);
+//                methodsManager.intervalPocketSender.onlineSockets.add(clientListenerThreadMethods);
+                clientListenerThreadMethods.sendMessage("updateData()");
+                clientListenerThreadMethods.sendMessage("Hello fom server!");
+                clientListenerThreadMethods.sendMessage("Hello fom server!");
+//                clientListenerThreadMethods.sendMessage("updateData()", socket);
             }
         } catch (IOException e) {
             System.out.println("Main:main(): " + e);

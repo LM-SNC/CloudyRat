@@ -28,8 +28,8 @@ public class Main extends Application {
         Thread connectionListener = new Thread(new ConnectListener(methodsManager));
         connectionListener.start();
 
-        Thread intervalPocketSender = new Thread(new IntervalPocketSender(methodsManager));
-        intervalPocketSender.start();
+//        Thread intervalPocketSender = new Thread(new IntervalPocketSender(methodsManager));
+//        intervalPocketSender.start();
 
 //        Thread serverListener;
 //        ServerMethods serverMethods = new ServerMethods();

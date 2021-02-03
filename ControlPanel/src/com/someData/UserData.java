@@ -6,13 +6,15 @@ public class UserData implements Serializable {
     public String publicIP;
     public String userName;
     public String operationSystem;
+    public int userId;
 
     @Override
     public String toString() {
         return "UserSimple{" +
                 "publicIP='" + publicIP + '\'' +
                 ", userName='" + userName + '\'' +
-                ", operationSystem=" + operationSystem +
+                ", operationSystem=" + operationSystem + '\'' +
+                ", userId=" + userId +
                 '}';
     }
 }

@@ -2,20 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="56daec5b-2a65-4a5f-b2be-7dae0a60f889" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/MethodsManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/panel/TableMethods.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/server/IntervalPocketSender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cllient/.idea/artifacts/Cllient_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/server/Worker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/server/WorkerTusks.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Cllient/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Cllient/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cllient/src/com/client/ClientDataManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Cllient/src/com/client/ClientDataManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cllient/src/com/client/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Cllient/src/com/client/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cllient/src/com/someData/UserData.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Cllient/src/com/someData/UserData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ControlPanel/com/panel/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ControlPanel/com/panel/sample.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/panel/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/panel/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/MethodsManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/MethodsManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/panel/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/panel/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/panel/TableManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/panel/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/panel/sample.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/panel/TableMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/panel/TableMethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/server/ClientListenerThreadMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/server/ClientListenerThreadMethods.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/server/ConnectListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/server/ConnectListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/server/ServerListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/server/ServerClientListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/server/ServerListenerThreadMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/server/ClientListenerThreadMethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/server/IntervalPocketSender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/server/IntervalPocketSender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/server/ServerClientListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/server/ServerClientListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/server/ServerMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/server/ServerMethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/someData/TableData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/someData/TableData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/someData/UserData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/someData/UserData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Server/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -88,6 +92,14 @@
       <option name="presentableId" value="Default" />
       <updated>1609429006253</updated>
     </task>
+    <task id="LOCAL-00001" summary="Structuring classes and code">
+      <created>1611249499821</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1611249499821</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -102,5 +114,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Structuring classes and code" />
+    <option name="LAST_COMMIT_MESSAGE" value="Structuring classes and code" />
   </component>
 </project>

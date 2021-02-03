@@ -1,9 +1,6 @@
 package com.someData;
 
-import javafx.beans.property.BooleanProperty;
-import javafx.beans.property.SimpleBooleanProperty;
-import javafx.beans.property.SimpleStringProperty;
-import javafx.beans.property.StringProperty;
+import javafx.beans.property.*;
 
 public class TableData {
 
@@ -11,12 +8,14 @@ public class TableData {
     private final SimpleStringProperty publicAddr;
     private final SimpleStringProperty userName;
     private final SimpleBooleanProperty onlineStatus;
+    private final SimpleIntegerProperty clientId;
 
-    public TableData(String clientName, String publicAddr, String userName, boolean onlineStatus) {
+    public TableData(String clientName, String publicAddr, String userName, boolean onlineStatus, int clientId) {
         this.clientName = new SimpleStringProperty(clientName);
         this.publicAddr = new SimpleStringProperty(publicAddr);
         this.userName = new SimpleStringProperty(userName);
         this.onlineStatus = new SimpleBooleanProperty(onlineStatus);
+        this.clientId = new SimpleIntegerProperty(clientId);
     }
 
     public String getClientName() {
@@ -65,6 +64,10 @@ public class TableData {
 
     public BooleanProperty onlineStatusProperty() {
         return onlineStatus;
+    }
+
+    public int getClientId() {
+        return clientId.get();
     }
 
 }
