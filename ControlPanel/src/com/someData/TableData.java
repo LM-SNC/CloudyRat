@@ -7,14 +7,14 @@ public class TableData {
     private final SimpleStringProperty clientName;
     private final SimpleStringProperty publicAddr;
     private final SimpleStringProperty userName;
-    private final SimpleBooleanProperty onlineStatus;
+    private final SimpleStringProperty connectedTime;
     private final SimpleIntegerProperty clientId;
 
-    public TableData(String clientName, String publicAddr, String userName, boolean onlineStatus, int clientId) {
+    public TableData(String clientName, String publicAddr, String userName, String connectedTime, int clientId) {
         this.clientName = new SimpleStringProperty(clientName);
         this.publicAddr = new SimpleStringProperty(publicAddr);
         this.userName = new SimpleStringProperty(userName);
-        this.onlineStatus = new SimpleBooleanProperty(onlineStatus);
+        this.connectedTime = new SimpleStringProperty(connectedTime);
         this.clientId = new SimpleIntegerProperty(clientId);
     }
 
@@ -54,16 +54,16 @@ public class TableData {
         return userName;
     }
 
-    public boolean getOnlineStatus() {
-        return onlineStatus.get();
+    public String getConnectedTimeStatus() {
+        return connectedTime.get();
     }
 
-    public void setOnlineStatus(boolean onStatus) {
-        onlineStatus.set(onStatus);
+    public void setConnectedTimeStatus(String time) {
+        connectedTime.set(time);
     }
 
-    public BooleanProperty onlineStatusProperty() {
-        return onlineStatus;
+    public StringProperty connectedTimeProperty() {
+        return connectedTime;
     }
 
     public int getClientId() {

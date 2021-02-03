@@ -2,6 +2,7 @@ package com.server;
 
 import com.MethodsManager;
 import com.someData.UserData;
+import javafx.beans.property.StringProperty;
 
 import java.util.ArrayList;
 
@@ -32,12 +33,12 @@ public class WorkerTusks {
         notify();
     }
 
-    public Runnable addTableRow(UserData userData) {
+    public Runnable addTableRow(UserData userData, String connectedTime) {
         return new Runnable() {
             @Override
             public void run() {
                 System.out.println("adding new row: " + this);
-                methodsManager.tableMethods.addTableRow(userData);
+                methodsManager.tableMethods.addTableRow(userData, connectedTime);
                 System.out.println("adding new row finished: " + this);
             }
         };

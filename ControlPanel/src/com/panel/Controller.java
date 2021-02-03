@@ -38,7 +38,7 @@ public class Controller {
     private TableColumn<TableData, String> userName; // Value injected by FXMLLoader
 
     @FXML // fx:id="onlineStatus"
-    private TableColumn<TableData, Boolean> onlineStatus; // Value injected by FXMLLoader
+    private TableColumn<TableData, String> connectedTime; // Value injected by FXMLLoader
 
     @FXML
     private Button connectButton;
@@ -50,7 +50,7 @@ public class Controller {
         methodsManager.tableMethods.userName = userName;
         methodsManager.tableMethods.clientName = clientName;
         methodsManager.tableMethods.mainTable = mainTable;
-        methodsManager.tableMethods.onlineStatus = onlineStatus;
+        methodsManager.tableMethods.connectedTime = connectedTime;
         methodsManager.tableMethods.publicAddr = publicAddr;
 
 //        tableManager = new TableManager(mainTable, clientName, publicAddr, userName, onlineStatus);

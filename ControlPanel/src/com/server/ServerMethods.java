@@ -7,7 +7,9 @@ import java.io.IOException;
 import java.io.ObjectOutputStream;
 import java.io.OutputStream;
 import java.net.Socket;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 
 public class ServerMethods {
     MethodsManager methodsManager;
@@ -34,7 +36,8 @@ public class ServerMethods {
 //            uDates.add(((UserData) receivedObject));
 //            methodsManager.tableMethods.addTableRow((UserData) receivedObject);
             ((UserData) receivedObject).userId = clientId;
-            methodsManager.worker.addTableRow((UserData) receivedObject);
+
+            methodsManager.worker.addTableRow((UserData) receivedObject, methodsManager.systemMethods.getTheDate());
 
 //            System.out.println("ClientMethods:readData()--publicIP: " + ((UserData) receivedObject).publicIP);
 //            System.out.println("ClientMethods:readData()--operationSystem: " + ((UserData) receivedObject).operationSystem);

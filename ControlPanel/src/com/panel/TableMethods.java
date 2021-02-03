@@ -17,20 +17,20 @@ public class TableMethods {
     public TableColumn<TableData, String> clientName;
     public TableColumn<TableData, String> publicAddr;
     public TableColumn<TableData, String> userName;
-    public TableColumn<TableData, Boolean> onlineStatus;
+    public TableColumn<TableData, String> connectedTime;
 
     List<TableData> tableList = new ArrayList<>();
 
-    public synchronized void addTableRow(UserData userData) {
+    public synchronized void addTableRow(UserData userData, String time) {
 
         if (userData != null) {
-            tableList.add(new TableData(userData.userName, userData.publicIP, userData.operationSystem, true, userData.userId));
+            tableList.add(new TableData(userData.userName, userData.publicIP, userData.operationSystem, time, userData.userId));
             mainTable.setItems(FXCollections.observableList(tableList));
 
             clientName.setCellValueFactory(param -> param.getValue().clientNameProperty());
             publicAddr.setCellValueFactory(param -> param.getValue().publicAddrProperty());
             userName.setCellValueFactory(param -> param.getValue().userNameProperty());
-            onlineStatus.setCellValueFactory(param -> param.getValue().onlineStatusProperty());
+            connectedTime.setCellValueFactory(param -> param.getValue().connectedTimeProperty());
         } else {
             System.out.println("TableMethods:updateTable()--NullPointerException");
         }
@@ -53,7 +53,7 @@ public class TableMethods {
             clientName.setCellValueFactory(param -> param.getValue().clientNameProperty());
             publicAddr.setCellValueFactory(param -> param.getValue().publicAddrProperty());
             userName.setCellValueFactory(param -> param.getValue().userNameProperty());
-            onlineStatus.setCellValueFactory(param -> param.getValue().onlineStatusProperty());
+        connectedTime.setCellValueFactory(param -> param.getValue().connectedTimeProperty());
 //        } else {
 //            System.out.println("TableMethods:updateTable()--NullPointerException");
 //        }

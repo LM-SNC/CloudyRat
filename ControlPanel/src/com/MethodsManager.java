@@ -10,6 +10,7 @@ import java.util.ArrayList;
 public class MethodsManager {
     public ServerMethods serverMethods;
     public TableMethods tableMethods;
+    public SystemMethods systemMethods;
 //    public IntervalPocketSender intervalPocketSender;
     public Worker worker;
 
@@ -19,6 +20,7 @@ public class MethodsManager {
     public MethodsManager() throws IOException {
         serverMethods = new ServerMethods(this);
         tableMethods = new TableMethods();
+        systemMethods = new SystemMethods();
 //        intervalPocketSender = new IntervalPocketSender(this);
         worker = new Worker(this);
 //        threadIntervalPocketSender = new Thread(intervalPocketSender);

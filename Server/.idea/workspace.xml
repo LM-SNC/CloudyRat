@@ -2,24 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="864c6de2-1351-4466-ac75-081637be53ad" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Cllient/.idea/artifacts/Cllient_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ControlPanel/src/com/server/Worker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ControlPanel/src/com/server/WorkerTusks.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Cllient/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Cllient/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Cllient/src/com/client/ClientDataManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Cllient/src/com/client/ClientDataManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Cllient/src/com/client/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Cllient/src/com/client/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Cllient/src/com/someData/UserData.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Cllient/src/com/someData/UserData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ControlPanel/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ControlPanel/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ControlPanel/src/com/MethodsManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ControlPanel/src/com/MethodsManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ControlPanel/src/com/panel/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ControlPanel/src/com/panel/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ControlPanel/src/com/panel/TableMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ControlPanel/src/com/panel/TableMethods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ControlPanel/src/com/server/ClientListenerThreadMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ControlPanel/src/com/server/ClientListenerThreadMethods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ControlPanel/src/com/server/ConnectListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ControlPanel/src/com/server/ConnectListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ControlPanel/src/com/server/IntervalPocketSender.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ControlPanel/src/com/server/IntervalPocketSender.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ControlPanel/src/com/server/ServerClientListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ControlPanel/src/com/server/ServerClientListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ControlPanel/src/com/server/ServerMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ControlPanel/src/com/server/ServerMethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ControlPanel/src/com/panel/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../ControlPanel/src/com/panel/sample.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ControlPanel/src/com/someData/TableData.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ControlPanel/src/com/someData/TableData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ControlPanel/src/com/someData/UserData.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ControlPanel/src/com/someData/UserData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />

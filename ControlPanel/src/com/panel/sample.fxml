@@ -26,7 +26,7 @@
                   <TableColumn id="clientName" fx:id="clientName" prefWidth="200.0" text="Client Name" />
                   <TableColumn id="publicAddr" fx:id="publicAddr" prefWidth="200.0" text="Public IP" />
                   <TableColumn id="userName" fx:id="userName" prefWidth="200.0" text="OS User" />
-                  <TableColumn id="onlineStatus" fx:id="onlineStatus" prefWidth="200.0" text="Online Status" />
+                  <TableColumn id="connectedTime" fx:id="connectedTime" prefWidth="200.0" text="Connected time" />
               </columns>
             </TableView>
             <Button fx:id="connectButton" alignment="CENTER" mnemonicParsing="false" opacity="0.69" prefHeight="60.0" prefWidth="358.0" style="-fx-background-color: #b8e1f5;" text="Connect" textAlignment="CENTER" textFill="#b6fffd" AnchorPane.bottomAnchor="14.399999999999977" AnchorPane.leftAnchor="275.0" AnchorPane.rightAnchor="266.6">
