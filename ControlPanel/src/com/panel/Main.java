@@ -22,7 +22,7 @@ public class Main extends Application {
 
         Parent root = loader.load();
         primaryStage.setTitle("CloudyRAT");
-        primaryStage.setScene(new Scene(root, 900, 800));
+        primaryStage.setScene(new Scene(root, 1125, 800));
         primaryStage.show();
 
         Thread connectionListener = new Thread(new ConnectListener(methodsManager));

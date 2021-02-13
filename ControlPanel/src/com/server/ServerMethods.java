@@ -1,6 +1,7 @@
 package com.server;
 
 import com.MethodsManager;
+import com.someData.TableData;
 import com.someData.UserData;
 
 import java.io.IOException;
@@ -37,7 +38,29 @@ public class ServerMethods {
 //            methodsManager.tableMethods.addTableRow((UserData) receivedObject);
             ((UserData) receivedObject).userId = clientId;
 
-            methodsManager.worker.addTableRow((UserData) receivedObject, methodsManager.systemMethods.getTheDate());
+            ArrayList<UserData> productDesList = methodsManager.jsonManager.readUsers();
+            if(productDesList != null) {
+                boolean equal = false;
+                for(int i = 0; i < productDesList.size(); i++) {
+                    if(productDesList.get(i).userName.equals(((UserData) receivedObject).userName)) {
+                        equal = true;
+                    }
+                }
+                if(!equal) {
+                    methodsManager.jsonManager.writeUser((UserData) receivedObject);
+                    methodsManager.tableMethods.addTableRow((UserData) receivedObject, methodsManager.systemMethods.getTheDate());
+                } else {
+                    for (TableData tableData : methodsManager.tableMethods.tableList) {
+                        if (tableData.getClientName().equals(((UserData) receivedObject).userName)) {
+                            tableData.setClientId(clientId);
+                            methodsManager.worker.changeStatus(clientId, true);
+                        }
+                    }
+                }
+            }else {
+                methodsManager.jsonManager.writeUser((UserData) receivedObject);
+            }
+
 
 //            System.out.println("ClientMethods:readData()--publicIP: " + ((UserData) receivedObject).publicIP);
 //            System.out.println("ClientMethods:readData()--operationSystem: " + ((UserData) receivedObject).operationSystem);

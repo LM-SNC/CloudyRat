@@ -54,4 +54,15 @@ public class WorkerTusks {
             }
         };
     }
+
+    public Runnable changeStatus(int clientId, boolean status) {
+        return new Runnable() {
+            @Override
+            public void run() {
+                System.out.println("deleting row: " + this);
+                methodsManager.tableMethods.changeStatus(clientId, status);
+                System.out.println("deleting row finished: " + this);
+            }
+        };
+    }
 }

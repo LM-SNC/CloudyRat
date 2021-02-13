@@ -1,6 +1,8 @@
 package com.someData;
 
 import javafx.beans.property.*;
+import javafx.scene.control.CheckBox;
+import javafx.scene.control.ComboBox;
 
 public class TableData {
 
@@ -8,14 +10,16 @@ public class TableData {
     private final SimpleStringProperty publicAddr;
     private final SimpleStringProperty userName;
     private final SimpleStringProperty connectedTime;
+    private final SimpleBooleanProperty onlineStatus;
     private final SimpleIntegerProperty clientId;
 
-    public TableData(String clientName, String publicAddr, String userName, String connectedTime, int clientId) {
+    public TableData(String clientName, String publicAddr, String userName, String connectedTime, int clientId, boolean onlineStatus) {
         this.clientName = new SimpleStringProperty(clientName);
         this.publicAddr = new SimpleStringProperty(publicAddr);
         this.userName = new SimpleStringProperty(userName);
         this.connectedTime = new SimpleStringProperty(connectedTime);
         this.clientId = new SimpleIntegerProperty(clientId);
+        this.onlineStatus = new SimpleBooleanProperty(onlineStatus);
     }
 
     public String getClientName() {
@@ -66,8 +70,24 @@ public class TableData {
         return connectedTime;
     }
 
+    public Boolean getOnlineStatus() {
+        return onlineStatus.get();
+    }
+
+    public void setOnlineStatus(Boolean status) {
+        onlineStatus.set(status);
+    }
+
+    public BooleanProperty onlineStatusProperty() {
+        return onlineStatus;
+    }
+
     public int getClientId() {
         return clientId.get();
     }
+    public void setClientId(int clientId) {
+        this.clientId.set(clientId);
+    }
+
 
 }

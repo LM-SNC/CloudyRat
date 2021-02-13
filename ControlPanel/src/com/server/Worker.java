@@ -21,6 +21,9 @@ public class Worker implements Runnable {
         workerTusks.put(workerTusks.removeTableRow(clientId));
     }
 
+    public void changeStatus(int clientId, boolean status) {
+        workerTusks.put(workerTusks.changeStatus(clientId, status));
+    }
     @Override
     public void run() {
         while (true) {

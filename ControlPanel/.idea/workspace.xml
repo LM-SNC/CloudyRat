@@ -2,19 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="56daec5b-2a65-4a5f-b2be-7dae0a60f889" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/server/SystemMethods.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/local/JsonManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/someData/Constants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/someData/Users.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Cllient/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Cllient/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ControlPanel/com/panel/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ControlPanel/com/panel/sample.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/MethodsManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/MethodsManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/panel/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/panel/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/panel/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/panel/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/panel/TableMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/panel/TableMethods.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/panel/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/panel/sample.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/server/ServerClientListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/server/ServerClientListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/server/ServerMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/server/ServerMethods.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/server/Worker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/server/Worker.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/server/WorkerTusks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/server/WorkerTusks.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/someData/TableData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/someData/TableData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,7 +40,7 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../ControlPanel" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../JSON" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />

@@ -29,7 +29,7 @@ public class ServerClientListener implements Runnable {
 
         } catch (SocketException ex) {
             System.out.println("ClientListener:run()--Соединение потеряно с " + clientId + ": " + ex);
-            methodsManager.worker.removeTableRow(clientId);
+            methodsManager.worker.changeStatus(clientId, false);
 //            for(int i = 0; i < methodsManager.intervalPocketSender.onlineSockets.size(); i ++) {
 //                if (methodsManager.intervalPocketSender.onlineSockets.get(i).clientId == clientId) {
 //                    methodsManager.intervalPocketSender.onlineSockets.remove(i);
